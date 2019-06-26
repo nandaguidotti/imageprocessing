@@ -20,7 +20,18 @@ The proposed method has four stages, the aim of each one is improve the image fo
 
 <h2>Descriptor for Texture Classification</h2>
 
-A novel neural network based image descriptor for texture classification is an interesting new texture descriptor generator for tree classification in UAV's images. For validation, the method uses three free texture datasets: UIUC, Outex and USPtex. The classification accuracies were calculated as 90.82%, 89.62% and 93.83% for these data sets respectively.The method is inspired by feed forward neural network and the main objective is to show feature extraction ability of the neural network. This descriptor consists of 3 x 3 overlapping blocks division, creating feature extraction network by using row and column pixels of the block, calculating feature value, normalization and histogram extraction. Firstly, image is divided into 3x3 size of overlapping blocks and pixels of each block are selected to create feed forward networks, Fig.~\ref{fig:Novel Network for texture clasification} shows a configuration for blocks and neural network.
+A novel neural network based image descriptor for texture classification is an interesting new texture descriptor generator for tree classification in UAV's images. For validation, the method uses three free texture datasets: UIUC, Outex and USPtex. The classification accuracies were calculated as 90.82%, 89.62% and 93.83% for these data sets respectively.The method is inspired by feed forward neural network and the main objective is to show feature extraction ability of the neural network. This descriptor consists of 3 x 3 overlapping blocks division, creating feature extraction network by using row and column pixels of the block, calculating feature value, normalization and histogram extraction. Firstly, image is divided into 3x3 size of overlapping blocks and pixels of each block are selected to create feed forward networks.
 
+
+<h2>Experiments</h2>
+
+30 UAV images from different crops were used to do the experiments. This images have multiple uncontrolled factors as illumination, atmospheric conditions, type of crop and others. 
 
 ![Fig004](https://user-images.githubusercontent.com/29265084/59731993-da42dd00-921e-11e9-841f-4aff4eb7a042.png)
+
+
+The efficiency of the method is 86\%, pitfalls of the method were identified in forest neighborhood to crop, trees without separation space and very small trees.
+
+<h2>Conclusions</h2>
+
+A method proposed is applied over crop images from UAV's, achieving an efficiency of 86\%. An initial image analysis show that Croma Cr channel highlights individual trees from image and at same time minimize background. A neural network construct feature image for texture descriptors analyzed with PCA, where the factor score give a discriminant for tree and non-tree images.
